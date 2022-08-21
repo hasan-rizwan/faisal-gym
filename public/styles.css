@@ -8,108 +8,308 @@
 html{
     font-size: 62.5%;
 }
-
+*  {
+    /* outline: 0.1rem solid blue; */
+    box-sizing: border-box;
+}
 body{
-    height: 100vh;
-    font-family: 'open sans', sans-serif;
-    background-image: linear-gradient(0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
-                  url(Bg_signup.png);
+    /* height: 150vh; */
+    width: 90vw;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0 auto;
+    /* background-image: url(Bg_signup.png);   */
 }
 
-
-.box1{
-    background-color: #ffffff;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: 50%; 
-    transform: translate(50%, -50%);
-    padding: 2rem;
-    border-radius: 0.5rem;
-    min-width: 28rem;
-    max-width: 32rem;
-
+header {
+    height: 10%;
 }
 
-.box1 h1{
-    font-size: 2.7rem;
-    text-align: center;
-    padding-bottom: 2rem;
-    border-bottom: 0.1rem solid silver;
-    font-weight: 600;
+body section {
+    width: 45%;
+    max-width: 600px;
+    height: 52%;
+    margin: 3% 0 0 12%;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
 }
-
-.box1 form{
-    margin: 1rem;
-}
-
-.box1 input{
+.container-1 {
     width: 100%;
+    margin-top: 20rem;
+    /* background-color: rgb(46, 165, 42); */
+}
+section > div > span {
+    font-size: 2.85rem;
+    font-weight: 600;
+    color: grey;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+div h1 {
+    font-size: 8rem;
+    font-style: italic;
+    line-height: 1.1;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+
+.container-2 {
+    width: 90%;
+    /* background-color: brown; */
+    margin-top: 6rem;
+}
+input {
+    height: 10rem;
     margin-top: 2rem;
-    height: 4rem;
-    font-size: 1.4rem;
-    border: none;
-    border-bottom: 0.15rem solid rgb(163, 163, 163);
-    padding: 0 0.75rem;
+    border-radius: 0rem;
+}
+    
+
+#firstName, #lastName {
+    width: 47.2%;
+}
+#lastName {
+    margin-left: 5%;
+}
+#email, #password {
+    width: 100%;
+}
+form>p {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+#btnSubmit {
+    width: 20rem;
+    margin-top: 2.5rem;
+    height: 10rem;
 }
 
-.box1 input:hover{
-    border-bottom: 0.15rem solid #0093E9;
+
+
+
+
+@media screen and (max-width: 1360px) {
+    body>section {
+        width: 65%;
+        height: 52%;
+        margin: 3% auto;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    section > div > span {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: grey;
+        display: inline-block;
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    div h1 {
+        font-size: 7rem;
+        font-style: italic;
+        line-height: 1.1;
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+    #firstName, #lastName {
+        width: 100%;
+    }
+    #lastName {
+        margin-left: 0;
+    }
 }
 
-.box1 input::placeholder{
-    color: rgb(163, 163, 163);
+
+@media screen and (max-width: 960px) {
+    body>section {
+        width: 75%;
+        height: 52%;
+        margin: 3% auto;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    section > div > span {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: grey;
+        display: inline-block;
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    div h1 {
+        font-size: 7rem;
+        font-style: italic;
+        line-height: 1.1;
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+    #firstName, #lastName {
+        width: 100%;
+    }
+    #lastName {
+        margin-left: 0;
+    }
 }
 
-.box1 form p{
-    font-size: 1.3rem;
-    padding: 3rem 0.75rem 0 0; 
-    color: rgb(163, 163, 163);
+@media screen and (max-width: 700px) {
+    body>section {
+        width: 82%;
+        height: 52%;
+        margin: 3% auto;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    section > div > span {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: grey;
+        display: inline-block;
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    div h1 {
+        font-size: 6rem;
+        font-style: italic;
+        line-height: 1.1;
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+    #firstName, #lastName {
+        width: 100%;
+    }
+    #lastName {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 560px) {
+    body>section {
+        width: 82%;
+        height: 52%;
+        margin: 3% auto;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    section > div > span {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: grey;
+        display: inline-block;
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    div h1 {
+        font-size: 5.73rem;
+        font-style: italic;
+        line-height: 1.1;
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+    #firstName, #lastName {
+        width: 100%;
+    }
+    #lastName {
+        margin-left: 0;
+    }
+@media screen and (max-width: 530px) {
+    body>section {
+        width: 82%;
+        height: 52%;
+        margin: 3% auto;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    section > div > span {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: grey;
+        display: inline-block;
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    div h1 {
+        font-size: 4.73rem;
+        font-style: italic;
+        line-height: 1.1;
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+    #firstName, #lastName {
+        width: 100%;
+    }
+    #lastName {
+        margin-left: 0;
+    }
+    @media screen and (max-width: 530px) {
+        body>section {
+            width: 82%;
+            height: 52%;
+            margin: 3% auto;
+            padding-bottom: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        section > div > span {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: grey;
+            display: inline-block;
+            margin-top: 3rem;
+            margin-left: 1rem;
+        }
+        div h1 {
+            font-size: 4.3rem;
+            font-style: italic;
+            line-height: 1.1;
+            margin-top: 5rem;
+            margin-left: 1rem;
+        }
+        #firstName, #lastName {
+            width: 100%;
+        }
+        #lastName {
+            margin-left: 0;
+        }
+@media screen and (max-width: 400px) {
+    body>section {
+        width: 82%;
+        height: 52%;
+        margin: 3% auto;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    section > div > span {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: grey;
+        display: inline-block;
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    div h1 {
+        font-size: 3.7rem;
+        font-style: italic;
+        line-height: 1.1;
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+    #firstName, #lastName {
+        width: 100%;
+    }
+    #lastName {
+        margin-left: 0;
+    }
 }
 
-.box1 form p:hover{
+#btnSubmit:hover {
     color: #0093E9;
     cursor: pointer;
-}
 
-.box1 button[type="submit"] {
-    display: block;
-    margin: 2rem auto;
-    font-size: 1.58rem;
-    width: 90%;
-    padding: 0.9rem 0;
-    /* border-radius: 2rem; */
-    border: none;
-    background-color: #E1193E; 
-    color: #ffffff;
-    font-weight: 60;
+}
     
-}
-
-.box1 button[type="submit"]:hover {
-    cursor: pointer;
-}
-
-.box1 .alreadyMember{
-    text-align: center;
-    font-size: 1.3rem;
-}
-.box1 .alreadyMember span{
-    color: #E1193E;
-    font-weight: 600;
-}
-.box1 .alreadyMember span:hover{
-    cursor: pointer;
-}
-
-footer img{
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    bottom: 2rem; 
-    margin: 0 0 0 2rem;
-}
-footer img:hover {
-    cursor: pointer;
-}
-
