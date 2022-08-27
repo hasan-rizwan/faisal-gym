@@ -6,12 +6,12 @@ const Navbar = () => {
       <div className="max-width">
         <div className="logo">Faisal Gym</div>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Membership</a></li>
+          <li><a href="https://google.com">Home</a></li>
+          <li><a href="https://google.com">About</a></li>
+          <li><a href="https://google.com">Services</a></li>
+          <li><a href="https://google.com">Pricing</a></li>
+          <li><a href="https://google.com">Contact</a></li>
+          <li><a href="https://google.com">Membership</a></li>
         </ul>
       </div>
 
