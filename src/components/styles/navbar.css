@@ -1,0 +1,37 @@
+nav {
+    width: 100%;
+    padding: 30px 0;
+}
+
+nav>.max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+li a {
+    font-size: 12px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
