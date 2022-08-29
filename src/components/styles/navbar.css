@@ -1,9 +1,17 @@
 nav {
-    width: 100%;
-    padding: 30px 0;
+    padding: 10px 0;
 }
 
 nav>.max-width {
+    font-size: 13px;
+}
+
+.max-width>span {
+    color: #1425af;
+    font-weight: 800;
+}
+
+nav>.max-width+.max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Open Sans", Arial, sans-serif;
 }
 
 .max-width {
@@ -14,14 +15,13 @@
 /* home */
 
 .home {
-    font-family: "Roboto Condensed", Arial, sans-serif;
     color: white;
     min-height: 100%;
     overflow: hidden;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(images/1.jpg);
+    background-image: url(images/7.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -39,54 +39,36 @@
     content: '';
     z-index: -1;
     background: #030513;
-    opacity: .7;
-}
-
-nav+.max-width {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    opacity: .8;
 }
 
 .hero {
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-.text-1 {
-    font-size: 66px;
+.hero-text {
+    font-size: 86px;
     font-weight: 700;
     text-transform: uppercase;
-    font-style: italic;
     color: #fff;
     line-height: 1.1;
-}
-
-.text-2 {
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-style: italic;
-    color: #fff;
-    line-height: 1.1;
-    text-align: center;
-    margin-bottom: 1.10em;
 }
 
 .link-container {
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    width: 500px;
 }
 
 .link-container a {
     font-size: 25px;
     font-weight: 400;
-    background-color: darkorange;
+    background-color: #1425af;
     color: #fff;
 
-    border: 2px solid darkorange;
+    border: 2px solid #1425af;
     border-radius: 3px;
     padding: 12px 36px;
     margin-top: 20px;
@@ -99,7 +81,7 @@ nav+.max-width {
 
 .link-container a:hover, li a:hover {
     background: none;
-    color: darkorange;
+    color: #1425af;
 }
 
 .down-btn {
@@ -109,14 +91,13 @@ nav+.max-width {
     width: 5em;
     height: 5em;
     border-radius: 50%;
-    background-color: transparent;
     text-indent: -10em;
     overflow: hidden;
     cursor: pointer;
     border: solid 2px #e5e6e7;
     color: white;
-    margin-top: 200px;
     transition: background-color 0.2s ease-in-out;
+    transform: translateY(190%);
 }
 
 .down-btn:hover {

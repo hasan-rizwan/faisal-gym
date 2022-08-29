@@ -9,11 +9,10 @@ const Home = () => {
                 <Navbar />
                 <div className="max-width">
                     <div className="hero">
-                        <h2 className='text-1'>Faisal Gym</h2>
-                        <h2 className='text-2'>Get in Shape</h2>
+                        <h1 className='hero-text'>Get in Shape</h1>
                         <div className="link-container">
                             <a href='https://google.com'>Login</a>
-                            <a href='https://google.com'>Sign Up</a>
+                            <a href='https://google.com'>Become A Member</a>
                         </div>
                         <a href="#down" className='down-btn'>More</a>
                     </div>
