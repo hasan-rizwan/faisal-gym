@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar'
-import './styles/home.css'
+// import './styles/home.css'
 
 const Home = () => {
     return (
         <>
-            <section className="home">
-                <Navbar />
-                <div className="max-width">
+            <Navbar />
+            {/* <section className="home">
+                <div className="container">
                     <div className="hero">
                         <h1 className='hero-text'>Get in Shape</h1>
                         <div className="link-container">
@@ -17,7 +17,7 @@ const Home = () => {
                         <a href="#down" className='down-btn'>More</a>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 }

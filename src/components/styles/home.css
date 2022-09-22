@@ -43,9 +43,10 @@
 }
 
 .hero {
+    height: 700px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .hero-text {
@@ -54,6 +55,7 @@
     text-transform: uppercase;
     color: #fff;
     line-height: 1.1;
+    margin-top: auto;
 }
 
 .link-container {
@@ -96,8 +98,13 @@
     cursor: pointer;
     border: solid 2px #e5e6e7;
     color: white;
-    transition: background-color 0.2s ease-in-out;
-    transform: translateY(190%);
+    margin-top: auto;
+    margin-bottom: 50px;
+    /* transition: all 0.75s ease, opacity 0.75s ease;
+    transition-delay: 1.5s;
+    transition: background-color 0.2s ease-in-out; */
+    /* transform: translateY(0); */
+    /* transform: translateY(190%); */
 }
 
 .down-btn:hover {
