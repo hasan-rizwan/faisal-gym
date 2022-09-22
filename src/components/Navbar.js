@@ -20,8 +20,6 @@ const Navbar = () => {
     }
     else {
       setToggle('show-menu');
-      // nav ke bahar click krne pe event listen nhi horha tw elseIf wali last condition true nhi horhi
-      // Event listen krna hy
     }
   }
 
