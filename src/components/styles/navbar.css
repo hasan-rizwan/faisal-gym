@@ -28,8 +28,9 @@ header {
     font-weight: var(--font-bold);
 }
 
-.nav-logo {
-    width: 1.25rem;
+.nav-logo>img {
+    width: 3rem;
+    margin-top: 10px;
 }
 
 .nav-toggle * {

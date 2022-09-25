@@ -1,17 +1,25 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './styles/navbar.css'
-import logo from './styles/images/logo.png'
+import logo from './styles/images/logo.svg'
 import Close from './styles/assets/webfonts/close-line.svg'
 import Menu from './styles/assets/webfonts/menu-line.svg'
 const Navbar = () => {
   const [toggle, setToggle] = useState(null)
   const menuRef = useRef(null);
   useEffect(() => {
-    document.addEventListener("mousedown", (event) => {
-      if (!menuRef.current.contains(event.target)) {
+    let handler = (event) => {
+      if (
+        menuRef &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target)
+      ) {
         setToggle(null);
       }
-    })
+    }
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler)
+    }
   })
 
   const onClickHandle = (e) => {
@@ -31,7 +39,7 @@ const Navbar = () => {
         </div> */}
         <div className="nav container">
           <a href='#' className='nav-logo'>
-            <img src={logo} alt="" /> Faisal GYM
+            <img src={logo} alt="" />
           </a>
           {/* <img src={logo} alt="" /> */}
           <div className={`nav-menu ${toggle}`} ref={menuRef}>
