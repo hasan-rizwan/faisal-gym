@@ -3,6 +3,7 @@ import './styles/navbar.css'
 import logo from './styles/images/logo.svg'
 import Close from './styles/assets/webfonts/close-line.svg'
 import Menu from './styles/assets/webfonts/menu-line.svg'
+import facebook from './styles/assets/webfonts/facebook-circle-fill.svg'
 const Navbar = () => {
   const [toggle, setToggle] = useState(null)
   const menuRef = useRef(null);
@@ -34,14 +35,20 @@ const Navbar = () => {
   return (
     <>
       <header>
-        {/* <div className="container">
-          <span>Call:</span> +92 321 2179202
-        </div> */}
+        <div className="call-to-action">
+          <div className="container">
+            <div className="phone">
+              <button>Click to Call:</button> +92 321 2179202
+            </div>
+            <div className="social-links">
+              <img src={facebook} alt="close" />
+            </div>
+          </div>
+        </div>
         <div className="nav container">
           <a href='#' className='nav-logo'>
             <img src={logo} alt="" />
           </a>
-          {/* <img src={logo} alt="" /> */}
           <div className={`nav-menu ${toggle}`} ref={menuRef}>
             <ul className='nav-list'>
               <h2>MENU</h2>

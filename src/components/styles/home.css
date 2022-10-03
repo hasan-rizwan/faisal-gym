@@ -1,116 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Open Sans", Arial, sans-serif;
-}
-
-.max-width {
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-
-/* home */
-
 .home {
-    color: white;
-    min-height: 100%;
-    overflow: hidden;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url(images/7.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
     position: relative;
+    padding-bottom: 0;
 }
 
-.home::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    z-index: -1;
-    background: #030513;
-    opacity: .8;
+.home-container {
+    padding-top: 4rem;
 }
 
-.hero {
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.home-data {
+    text-align: center;
 }
 
-.hero-text {
-    font-size: 86px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    line-height: 1.1;
-    margin-top: auto;
+.home-subtitle {
+    font-size: var(--bigger-font-size);
+    -webkit-text-stroke: 1px var(--title-color);
+    color: transparent;
 }
 
-.link-container {
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
+.home-title {
+    font-size: var(--bigger-font-size);
+    font-weight: var(--font-black);
+    margin: .5rem 0;
 }
 
-.link-container a {
-    font-size: 25px;
-    font-weight: 400;
-    background-color: #1425af;
-    color: #fff;
-
-    border: 2px solid #1425af;
-    border-radius: 3px;
-    padding: 12px 36px;
-    margin-top: 20px;
-
-
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    cursor: pointer;
+.home-subtitle,
+.home-title {
+    letter-spacing: 1.5px;
 }
-
-.link-container a:hover, li a:hover {
-    background: none;
-    color: #1425af;
-}
-
-.down-btn {
-    background-image: url("./assets/css/images/arrow.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 5em;
-    height: 5em;
-    border-radius: 50%;
-    text-indent: -10em;
-    overflow: hidden;
-    cursor: pointer;
-    border: solid 2px #e5e6e7;
-    color: white;
-    margin-top: auto;
-    margin-bottom: 50px;
-    /* transition: all 0.75s ease, opacity 0.75s ease;
-    transition-delay: 1.5s;
-    transition: background-color 0.2s ease-in-out; */
-    /* transform: translateY(0); */
-    /* transform: translateY(190%); */
-}
-
-.down-btn:hover {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.125);
-    transition: background-color 0.2s ease-in-out;
-}
-
-/* home */

@@ -1,11 +1,23 @@
 header {
     width: 100%;
-    background-color: transparent;
-    position: fixed;
+    max-height: 20rem;
+    background-color: black;
+    /* position: fixed; */
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
     transition: background .3s;
+}
+
+.call-to-action {
+    font-size: var(--smaller-font-size);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+    padding-block: .50rem;
+}
+
+.call-to-action>.container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav {
