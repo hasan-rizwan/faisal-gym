@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './styles/navbar.css'
-import logo from './styles/images/logo.svg'
+import logo from './styles/assets/images/logo.svg'
 import Close from './styles/assets/webfonts/close-line.svg'
 import Menu from './styles/assets/webfonts/menu-line.svg'
 import facebook from './styles/assets/webfonts/facebook-circle-fill.svg'
@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="call-to-action">
           <div className="container">
             <div className="phone">
-              <button>Click to Call:</button> +92 321 2179202
+              <a href='/' className='button-cta'>Click to Call:</a> +92 321 2179202
             </div>
             <div className="social-links">
               <img src={facebook} alt="close" />
@@ -46,7 +46,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="nav container">
-          <a href='#' className='nav-logo'>
+          <a href='/' className='nav-logo'>
             <img src={logo} alt="" />
           </a>
           <div className={`nav-menu ${toggle}`} ref={menuRef}>
