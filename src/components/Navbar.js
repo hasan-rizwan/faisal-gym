@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="call-to-action">
           <div className="container">
             <div className="phone">
-              <a href='/' className='button-cta'>Click to Call:</a> +92 321 2179202
+              <button className='button-cta'>Tap To Copy</button> +92 321 2179202
             </div>
             <div className="social-links">
               <img src={facebook} alt="close" />
@@ -58,7 +58,7 @@ const Navbar = () => {
               <li className='nav-item'><a href="#home" className='nav-link' onClick={onClickHandle}>Pricing</a></li>
               <li className='nav-item'><a href="#home" className='nav-link' onClick={onClickHandle}>Contact</a></li>
               <div className="nav-link">
-                <a href="#home" className='button nav-button' onClick={onClickHandle}>Membership</a>
+                <a href="#home" className='button nav-button' onClick={onClickHandle}>Membership Coming Soon</a>
               </div>
             </ul>
             <div className="nav-close" onClick={onClickHandle}>

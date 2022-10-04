@@ -11,7 +11,7 @@ header {
 
 .call-to-action {
     font-size: var(--smaller-font-size);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding-block: .50rem;
 }
 
@@ -24,18 +24,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 11rem;
+    min-width: 10.5rem;
 }
 
 .button-cta {
     display: inline-block;
-    padding: .1em .5em;
+    padding: .4em .5em;
     background-color: var(--first-color);
-    color: var(--title-color-black);
-    border: 2px solid var(--first-color-light);
-    border-radius: 5%;
-    font-weight: var(--font-bold);
+    color: var(--title-color);
+    border: 0;
     transition: background .3s;
+    cursor: pointer;
+    font-size: .70rem;
+}
+
+.button-cta:hover {
+    background-color: var(--first-color-alt);
 }
 
 .social-links>img {
@@ -126,6 +130,10 @@ header {
     top: 1rem;
     right: 1.5rem;
     cursor: pointer;
+}
+
+.nav-close>img {
+    width: 2rem;
 }
 
 /* Show Menu */

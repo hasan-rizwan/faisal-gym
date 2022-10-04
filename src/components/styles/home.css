@@ -60,6 +60,7 @@
     border: 2px solid var(--first-color-light);
     font-weight: var(--font-bold);
     transition: background .3s;
+    cursor: pointer;
 }
 
 .button:hover {

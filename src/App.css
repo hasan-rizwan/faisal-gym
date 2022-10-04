@@ -4,9 +4,9 @@
 
 	/*========== Colors ==========*/
 	/*Color mode HSL(hue, saturation, lightness)*/
-	--first-color: hsl(4, 86%, 42%);
-	--first-color-light: hsl(0, 88%, 32%);
-	--first-color-alt: hsl(0, 100%, 50%);
+	--first-color: hsl(0, 100%, 50%);
+	/* --first-color-light: hsl(0, 88%, 32%); */
+	--first-color-alt: #b80000;
 	--first-color-dark: hsl(4, 100%, 19%);
 	--first-color-gray: hsl(79, 6%, 64%);
 	--title-color: hsl(180, 4%, 98%);
