@@ -60,9 +60,29 @@
 	margin: 0;
 }
 
+/*=============== ScrollBar Start ===============*/
+
 html {
 	scroll-behavior: smooth;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+	scrollbar-color: var(--first-color) var(--body-color);
 }
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: var(--body-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(transparent, var(--first-color), transparent);
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: linear-gradient(transparent, hsla(0, 100%, 50%, 0.815), transparent);
+}
+
+/*=============== ScrollBar End ===============*/
 
 body,
 button,
