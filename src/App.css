@@ -1,8 +1,9 @@
-/*=============== VARIABLES CSS ===============*/
+/*=============== VARIABLES CSS START ===============*/
 :root {
 	--header-height: 3.5rem;
 
-	/*========== Colors ==========*/
+	/*========== COLOR START ==========*/
+
 	/*Color mode HSL(hue, saturation, lightness)*/
 	--first-color: hsl(0, 100%, 50%);
 	--first-color-light: hsl(18, 100%, 70%);
@@ -15,7 +16,10 @@
 	--text-color-light: hsl(180, 4%, 65%);
 	--body-color: hsl(180, 12%, 8%);
 
-	/*========== Font and typography ==========*/
+	/*========== COLOR END ==========*/
+
+	/*========== FONT AND TYPOGRAPHY START ==========*/
+
 	/*.5rem = 8px | 1rem = 16px ...*/
 	--body-font: 'Red Hat Display', sans-serif;
 	--second-font: 'Kaushan Script', cursive;
@@ -53,7 +57,12 @@
 	}
 }
 
-/*=============== BASE ===============*/
+/*========== FONT AND TYPOGRAPHY END ==========*/
+
+/*=============== VARIABLES CSS END ===============*/
+
+/*=============== BASE START ===============*/
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -114,7 +123,10 @@ img {
 	height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/*=============== BASE END ===============*/
+
+/*=============== REUSABLE CSS CLASSES START ===============*/
+
 .container {
 	max-width: 1124px;
 	margin-right: 1.5rem;
@@ -125,7 +137,7 @@ img {
 	padding: 4.5rem 0 2rem;
 }
 
-.section__data {
+.section-data {
 	display: flex;
 	flex-direction: column;
 	row-gap: .75rem;
@@ -133,13 +145,13 @@ img {
 	margin-bottom: 3rem;
 }
 
-.section__title,
-.section__title-border {
+.section-title,
+.section-title-border {
 	font-size: var(--big-font-size);
 	letter-spacing: 1.5px;
 }
 
-.section__subtitle {
+.section-subtitle {
 	font-size: var(--h2-font-size);
 	font-family: var(--second-font);
 	font-weight: 400;
@@ -148,13 +160,13 @@ img {
 	transform: rotate(-2deg);
 }
 
-.section__titles {
+.section-titles {
 	display: flex;
 	column-gap: .75rem;
 	justify-content: center;
 }
 
-.section__title-border {
+.section-title-border {
 	-webkit-text-stroke: 1px var(--text-color);
 	color: transparent;
 }
@@ -176,3 +188,5 @@ img {
 .color-green {
 	color: var(--first-color);
 }
+
+/*=============== REUSABLE CSS CLASSES END ===============*/

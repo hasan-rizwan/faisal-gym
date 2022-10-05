@@ -50,7 +50,7 @@
     margin-bottom: 2.5rem;
 }
 
-/* Button Start */
+/*=============== BUTTON START ===============*/
 
 .button {
     display: inline-block;
@@ -93,4 +93,4 @@
     transform: translateX(.15rem);
 }
 
-/* Button End */
+/*=============== BUTTON END ===============*/
