@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header>
+      <header className='header'>
         <div className="call-to-action">
           <div className="container">
             <div className="phone">

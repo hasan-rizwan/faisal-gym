@@ -1,4 +1,4 @@
-header {
+.header {
     width: 100%;
     max-height: 20rem;
     background-color: var(--body-color);
@@ -140,11 +140,6 @@ header {
     color: var(--first-color);
 }
 
-.nav-link>.button:hover {
-    color: var(--title-color);
-    background-color: var(--first-color);
-}
-
 .nav-close {
     position: absolute;
     top: 1rem;
@@ -160,7 +155,11 @@ header {
     background-color: var(--title-color);
     color: var(--title-color-black);
     border: none;
+}
 
+.nav-link>.button:hover {
+    color: var(--title-color);
+    background-color: var(--first-color);
 }
 
 /* Show Menu Start */
