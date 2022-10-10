@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './styles/navbar.css'
 import logo from './styles/assets/images/logo.svg'
-import Close from './styles/assets/webfonts/close-line.svg'
-import Menu from './styles/assets/webfonts/menu-line.svg'
-import facebook from './styles/assets/webfonts/facebook-circle-fill.svg'
+import CloseLine from './styles/assets/webfonts/CloseLine'
+import MenuLine from './styles/assets/webfonts/MenuLine'
+import FacebookCircleFill from './styles/assets/webfonts/FacebookCircleFill'
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(null)
   const menuRef = useRef(null);
@@ -24,7 +25,7 @@ const Navbar = () => {
   })
 
   const onClickHandle = (e) => {
-    if (e.target.alt !== "show") {
+    if (e.target.className.animVal !== "show") {
       setToggle(null);
     }
     else {
@@ -41,7 +42,7 @@ const Navbar = () => {
               <button className='button-cta'>Tap To Copy</button> +92 321 2179202
             </div>
             <div className="social-links">
-              <img src={facebook} alt="close" />
+              <FacebookCircleFill />
             </div>
           </div>
         </div>
@@ -63,14 +64,14 @@ const Navbar = () => {
               </div>
             </ul>
             <div className="nav-close" onClick={onClickHandle}>
-              <img src={Close} alt="close" />
+              <CloseLine />
             </div>
           </div>
 
           {/* Toggle Button */}
 
           <div className="nav-toggle" onClick={onClickHandle}>
-            <img src={Menu} alt="show" />
+            <MenuLine />
           </div>
 
           {/* Toggle Button */}

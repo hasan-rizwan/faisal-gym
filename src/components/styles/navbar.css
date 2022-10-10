@@ -47,7 +47,7 @@
     background-color: var(--first-color-alt);
 }
 
-.social-links>img {
+.social-links>svg {
     width: 1.50rem;
     cursor: pointer;
 }
@@ -147,7 +147,7 @@
     cursor: pointer;
 }
 
-.nav-close>img {
+.nav-close>svg {
     width: 2rem;
 }
 

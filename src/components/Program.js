@@ -13,7 +13,7 @@ const Program = () => {
                     <h2 className="section-subtitle">Our Program</h2>
                     <div className="section-titles">
                         <h1 className="section-title-border">BUILD YOUR</h1>
-                        <h1 className="section-title">DREAM BODY</h1>
+                        <h1 className="section-title">BODY</h1>
                     </div>
                 </div>
                 <div className="program-container grid">
