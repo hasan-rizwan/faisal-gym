@@ -53,10 +53,11 @@ const Navbar = () => {
             <ul className='nav-list'>
               <h2>MENU</h2>
               <li className='nav-item'><a href="#home" className='nav-link' onClick={onClickHandle}>Home</a></li>
-              <li className='nav-item'><a href="#home" className='nav-link' onClick={onClickHandle}>About</a></li>
-              <li className='nav-item'><a href="#home" className='nav-link' onClick={onClickHandle}>Program</a></li>
-              <li className='nav-item'><a href="#home" className='nav-link' onClick={onClickHandle}>Pricing</a></li>
-              <li className='nav-item'><a href="#home" className='nav-link' onClick={onClickHandle}>Contact</a></li>
+              <li className='nav-item'><a href="#about" className='nav-link' onClick={onClickHandle}>About</a></li>
+              <li className='nav-item'><a href="#program" className='nav-link' onClick={onClickHandle}>Program</a></li>
+              <li className='nav-item'><a href="#whyUs" className='nav-link' onClick={onClickHandle}>Why Us</a></li>
+              <li className='nav-item'><a href="#pricing" className='nav-link' onClick={onClickHandle}>Pricing</a></li>
+              <li className='nav-item'><a href="#contact" className='nav-link' onClick={onClickHandle}>Contact</a></li>
               <div className="nav-link">
                 <a href="#home" className='button nav-button' onClick={onClickHandle}>Membership Coming Soon</a>
               </div>

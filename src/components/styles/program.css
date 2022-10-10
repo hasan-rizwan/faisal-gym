@@ -57,12 +57,12 @@
     transition: opacity .4s;
 }
 
-.program-button>img {
+.program-button>svg {
     display: block;
     transition: transform .3s;
 }
 
-.program-button:hover>img {
+.program-button:hover>svg {
     transform: translateX(.25rem);
 }
 

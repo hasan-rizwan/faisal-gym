@@ -4,7 +4,7 @@ import './styles/whyUs.css'
 const WhyUs = () => {
     return (
         <>
-            <section className="choose section">
+            <section className="choose section" id='whyUs'>
                 <div className="choose-overflow">
                     <div className="choose-container container grid">
                         <div className="choose-content">

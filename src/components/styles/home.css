@@ -75,7 +75,7 @@
     color: #fff;
 } */
 
-.button>img {
+.button>svg {
     width: 18px;
     height: 18px;
     transition: transform .3s;
@@ -89,7 +89,7 @@
     column-gap: .5em;
 }
 
-.button-flex:hover>img {
+.button-flex:hover>svg {
     transform: translateX(.15rem);
 }
 

@@ -60,13 +60,14 @@
     border: none;
 }
 
-.pricing-list+.pricing-button:hover {
+/* .pricing-list+.pricing-button:hover {
     color: var(--title-color);
     background-color: var(--first-color);
-}
-.pricing-list+.pricing-button:hover > img {
-    color: var(--title-color);
-}
+} */
+
+/* .pricing-list+.pricing-button:hover>svg {
+    fill: var(--title-color);
+} */
 
 .pricing-card-active {
     background-color: var(--first-color);
