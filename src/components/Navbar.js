@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './styles/navbar.css'
 import logo from './styles/assets/images/logo.svg'
 import CloseLine from './styles/assets/webfonts/CloseLine'
@@ -9,12 +9,9 @@ import CopyToClipboard from 'react-copy-to-clipboard'
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
-  const menuRef = useRef(null);
-
   const [copyBtnText, setCopyBtnText] = useState("Tap To Copy");
-
   const onClickHandle = (e) => {
-    setShowMenu(!showMenu)
+    setShowMenu(!showMenu);
   }
   return (
     <>
@@ -36,7 +33,7 @@ const Navbar = () => {
           <Link to='/' className='nav-logo'>
             <img src={logo} alt="" />
           </Link>
-          <div className={`nav-menu ${showMenu ? 'show-menu' : ''}`} ref={menuRef}>
+          <div className={`nav-menu ${showMenu ? 'show-menu' : ''}`}>
             <ul className='nav-list'>
               <h2>MENU</h2>
               <li className='nav-item'><Link to="#home" className='nav-link' onClick={onClickHandle}>Home</Link></li>
