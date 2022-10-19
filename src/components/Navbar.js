@@ -8,33 +8,13 @@ import { HashLink as Link } from 'react-router-hash-link'
 import CopyToClipboard from 'react-copy-to-clipboard'
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(null)
+  const [showMenu, setShowMenu] = useState(false)
   const menuRef = useRef(null);
-  useEffect(() => {
-    let handler = (event) => {
-      if (
-        menuRef &&
-        menuRef.current &&
-        !menuRef.current.contains(event.target)
-      ) {
-        setToggle(null);
-      }
-    }
-    document.addEventListener("mousedown", handler);
-    return () => {
-      document.removeEventListener("mousedown", handler)
-    }
-  })
 
   const [copyBtnText, setCopyBtnText] = useState("Tap To Copy");
 
   const onClickHandle = (e) => {
-    if (e.target.className.animVal !== "show") {
-      setToggle(null);
-    }
-    else {
-      setToggle('show-menu');
-    }
+    setShowMenu(!showMenu)
   }
   return (
     <>
@@ -56,7 +36,7 @@ const Navbar = () => {
           <Link to='/' className='nav-logo'>
             <img src={logo} alt="" />
           </Link>
-          <div className={`nav-menu ${toggle}`} ref={menuRef}>
+          <div className={`nav-menu ${showMenu ? 'show-menu' : ''}`} ref={menuRef}>
             <ul className='nav-list'>
               <h2>MENU</h2>
               <li className='nav-item'><Link to="#home" className='nav-link' onClick={onClickHandle}>Home</Link></li>
