@@ -6,6 +6,7 @@ const SvgCloseLine = (props) => (
     width="24"
     height="24"
     role="img"
+    className="close"
     {...props}
   >
     <path fill="none" d="M0 0h24v24H0z" />

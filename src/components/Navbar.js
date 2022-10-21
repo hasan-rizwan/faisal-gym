@@ -1,16 +1,39 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './styles/navbar.css'
 import logo from './styles/assets/images/logo.svg'
 import CloseLine from './styles/assets/webfonts/CloseLine'
 import MenuLine from './styles/assets/webfonts/MenuLine'
 import FacebookCircleFill from './styles/assets/webfonts/FacebookCircleFill'
-import { HashLink as Link } from 'react-router-hash-link'
+import { Link } from 'react-scroll'
+import { animateScroll as scroll } from 'react-scroll'
 import CopyToClipboard from 'react-copy-to-clipboard'
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false)
   const [copyBtnText, setCopyBtnText] = useState("Tap To Copy");
-  const onClickHandle = (e) => {
+  const [showMenu, setShowMenu] = useState(false);
+  const menuRef = useRef(null);
+
+  // Logic to close Menu when Clicked outside
+
+  useEffect(() => {
+    let handler = (event) => {
+      if (
+        menuRef &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target)
+      ) {
+        setShowMenu(false);
+      }
+    }
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler)
+    }
+  })
+
+  // Logic to close Menu when Clicked on links or close Svg
+
+  const onClickHandle = () => {
     setShowMenu(!showMenu);
   }
   return (
@@ -30,20 +53,20 @@ const Navbar = () => {
           </div>
         </div>
         <div className="nav container">
-          <Link to='/' className='nav-logo'>
+          <Link to='/' className='nav-logo' onClick={() => scroll.scrollToTop()}>
             <img src={logo} alt="" />
           </Link>
-          <div className={`nav-menu ${showMenu ? 'show-menu' : ''}`}>
+          <div className={`nav-menu ${showMenu ? 'show-menu' : ''}`} ref={menuRef}>
             <ul className='nav-list'>
               <h2>MENU</h2>
-              <li className='nav-item'><Link to="#home" className='nav-link' onClick={onClickHandle}>Home</Link></li>
-              <li className='nav-item'><Link to="#about" className='nav-link' onClick={onClickHandle}>About</Link></li>
-              <li className='nav-item'><Link to="#program" className='nav-link' onClick={onClickHandle}>Program</Link></li>
-              <li className='nav-item'><Link to="#whyUs" className='nav-link' onClick={onClickHandle}>Why Us</Link></li>
-              <li className='nav-item'><Link to="#pricing" className='nav-link' onClick={onClickHandle}>Pricing</Link></li>
-              <li className='nav-item'><Link to="#contact" className='nav-link' onClick={onClickHandle}>Contact</Link></li>
+              <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="home" className='nav-link' onClick={onClickHandle}>Home</Link></li>
+              <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="about" className='nav-link' onClick={onClickHandle}>About</Link></li>
+              <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="program" className='nav-link' onClick={onClickHandle}>Program</Link></li>
+              <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="whyUs" className='nav-link' onClick={onClickHandle}>Why Us</Link></li>
+              <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="pricing" className='nav-link' onClick={onClickHandle}>Pricing</Link></li>
+              <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="contact" className='nav-link' onClick={onClickHandle}>Contact</Link></li>
               <div className="nav-link">
-                <Link to="#home" className='button nav-button' onClick={onClickHandle}>Membership Coming Soon</Link>
+                <Link to="home" className='button nav-button' onClick={onClickHandle}>Membership Coming Soon</Link>
               </div>
             </ul>
             <div className="nav-close" onClick={onClickHandle}>

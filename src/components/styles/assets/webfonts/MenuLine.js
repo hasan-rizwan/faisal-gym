@@ -6,7 +6,7 @@ const SvgMenuLine = (props) => (
     width="24"
     height="24"
     role="img"
-    className={'show'}
+    className="show"
     {...props}
   >
     <path fill="none" d="M0 0h24v24H0z" />
