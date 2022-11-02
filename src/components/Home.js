@@ -2,6 +2,7 @@ import React from 'react'
 import './styles/home.css'
 import ArrowRightLine from './styles/assets/webfonts/ArrowRightLine'
 import heroVideo from './styles/assets/videos/hero-video.mp4'
+import { Link } from 'react-scroll'
 
 const Home = () => {
     return (
@@ -12,10 +13,13 @@ const Home = () => {
                 </video>
                 <div className="container home-container">
                     <div className="home-data">
-                        <h2 className="home-subtitle">GET YOUR BODY</h2>
-                        <h1 className="home-title">IN SHAPE</h1>
+                        <h2 className="home-subtitle">FAISAL GYM</h2>
+                        <h1 className="home-title">GET IN SHAPE</h1>
                         <p className="home-description">In here, we will help you to shape and build your ideal body and live your life to its fullest.</p>
-                        <button className='button button-flex'>Get Started <ArrowRightLine /></button>
+                        <div className="button-container">
+                            <Link spy={true} smooth={true} offset={-100} duration={0} to='program' className='button button-flex'> Our Program <ArrowRightLine /></Link>
+                            <button className='button-secondary button-flex'>Contact Us <ArrowRightLine /></button>
+                        </div>
                     </div>
                 </div>
             </section>

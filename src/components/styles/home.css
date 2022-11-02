@@ -6,7 +6,7 @@
     padding-bottom: 0;
     overflow: hidden;
     height: 100vh;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .video-bg {
@@ -22,7 +22,7 @@
 }
 
 .home-container {
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
 }
 
 .home-data {
@@ -52,6 +52,12 @@
 
 /*=============== BUTTON START ===============*/
 
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .button {
     display: inline-block;
     padding: 1em 1em;
@@ -63,19 +69,26 @@
     cursor: pointer;
 }
 
+.button-secondary {
+    display: inline-block;
+    padding: 1em 1em;
+    background-color: white;
+    color: var(--first-color);
+    border: 2px solid rgb(187, 187, 187);
+    font-weight: var(--font-bold);
+    transition: background .3s;
+    cursor: pointer;
+}
+
 .button:hover {
     background-color: var(--first-color-alt);
 }
 
-/* .button:hover {
-    box-shadow:
-        inset -4.7em 0 0 0 var(--first-color),
-        inset 4.7em 0 0 0 var(--first-color);
-    border-color: var(--first-color-dark);
-    color: #fff;
-} */
+.button-secondary:hover {
+    background-color: #fafafad8;
+}
 
-.button>svg {
+.button>svg, .button-secondary>svg {
     width: 18px;
     height: 18px;
     transition: transform .3s;
@@ -87,6 +100,7 @@
     align-items: center;
     justify-content: center;
     column-gap: .5em;
+    row-gap: 1em;
 }
 
 .button-flex:hover>svg {

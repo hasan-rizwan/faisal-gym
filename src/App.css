@@ -118,6 +118,7 @@ a {
 	text-decoration: none;
 	cursor: pointer;
 }
+
 a:hover, a:active, a:focus {
 	cursor: pointer;
 }
