@@ -17,24 +17,22 @@
     border: 2px solid var(--first-color-light);
 }
 
-.program-img {
-    width: 38px;
+.program-shape {
+    /* width: 50px;
+    height: 50px; */
+    /* background-color: var(--first-color-gray); */
+    /* border-radius: 50%; */
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.program-shape {
-    width: 50px;
-    height: 50px;
-    background-color: var(--first-color-gray);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    margin-bottom: 1rem;
-    transition: background .5s;
+.program-img {
+    width: 58px;
 }
 
 .program-title {
-    font-size: var(--h3-font-size);
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .program-description {
@@ -62,7 +60,7 @@
     transition: transform .3s;
 }
 
-.program-button:hover>svg {
+/* .program-button:hover>svg {
     transform: translateX(.25rem);
 }
 
@@ -77,4 +75,4 @@
 
 .program-card:hover .program-button {
     opacity: 1;
-}
+} */

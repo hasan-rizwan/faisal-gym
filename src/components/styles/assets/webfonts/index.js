@@ -1,9 +1,4 @@
-export { default as ArrowRightLineBlack } from "./ArrowRightLineBlack";
-export { default as ArrowRightLine } from "./ArrowRightLine";
-export { default as CheckboxCircleLine } from "./CheckboxCircleLine";
-export { default as CloseLine } from "./CloseLine";
-export { default as FaBrands400 } from "./FaBrands400";
-export { default as FaRegular400 } from "./FaRegular400";
-export { default as FaSolid900 } from "./FaSolid900";
-export { default as FacebookCircleFill } from "./FacebookCircleFill";
-export { default as MenuLine } from "./MenuLine";
+export { default as FireLine } from "./FireLine";
+export { default as HeartLine } from "./HeartLine";
+export { default as Muscle } from "./Muscle";
+export { default as Yoga } from "./Yoga";

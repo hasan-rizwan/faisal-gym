@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Program from './components/Program';
 // import WhyUs from './components/WhyUs';
 import Branch from './components/Branch';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Program />
       {/* <WhyUs /> */}
       <Branch />
+      <Footer />
     </div>
   );
 }
