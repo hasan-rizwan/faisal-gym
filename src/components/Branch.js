@@ -39,7 +39,7 @@ const Branches = () => {
                     </article>
                     <article className='branch-card branch-asphani'>
                         <div className="branch-data">
-                            <h1 className="branch-title">Abul Hasan Isphahani Rd Block 4A</h1>
+                            <h1 className="branch-title">Abul Hasan Isphahani Rd</h1>
                             <button className="branch-button">Find More</button>
                         </div>
                     </article>
