@@ -38,7 +38,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <header className='header'>
+      <header className='header bg-header'>
         <div className="call-to-action">
           <div className="container">
             <div className="phone">
@@ -48,7 +48,7 @@ const Navbar = () => {
               +92 321 2179202
             </div>
             <div className="social-links">
-              <a href="https://www.facebook.com/faisalsgym/"><FacebookCircleFill /></a>
+              <a href="https://www.facebook.com/faisalsgym/" target={'_blank'} rel="noreferrer"><FacebookCircleFill /></a>
             </div>
           </div>
         </div>
@@ -60,10 +60,9 @@ const Navbar = () => {
             <ul className='nav-list'>
               <h2>MENU</h2>
               <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="home" className='nav-link' onClick={onClickHandle}>Home</Link></li>
-              {/* <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="about" className='nav-link' onClick={onClickHandle}>About</Link></li> */}
               <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="program" className='nav-link' onClick={onClickHandle}>Program</Link></li>
               <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="branch" className='nav-link' onClick={onClickHandle}>Branches</Link></li>
-              <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="contact" className='nav-link' onClick={onClickHandle}>Contact</Link></li>
+              {/* <li className='nav-item'><Link spy={true} smooth={true} offset={-100} duration={0} to="contact" className='nav-link' onClick={onClickHandle}>Contact</Link></li> */}
               <div className="nav-link">
                 <Link to="home" className='button nav-button' onClick={onClickHandle}>Membership Coming Soon</Link>
               </div>

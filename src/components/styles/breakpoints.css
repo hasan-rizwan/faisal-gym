@@ -1,0 +1,107 @@
+/*=============== Breakpoints START ===============*/
+
+/* Small Devices Start */
+
+@media screen and (max-width: 340px) {
+    .container {
+        margin-left: .50rem;
+        margin-right: .50rem;
+    }
+
+    .button, .button-secondary {
+        padding: .50em .50em;
+    }
+}
+
+/* Small Devices End */
+
+
+/* Medium Devices Start */
+
+@media screen and (min-width: 564px) {
+    .program-container {
+        grid-template-columns: repeat(3, 155px);
+        gap: 2rem;
+    }
+
+    .branch-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .nav-menu {
+        width: 60%;
+    }
+
+    .program-container {
+        grid-template-columns: repeat(3, 225px);
+        gap: 2rem;
+    }
+
+}
+
+/* Medium Devices End */
+
+
+/* Large Devices Start */
+
+@media screen and (min-width: 1023px) {
+
+    .nav {
+        height: var(--header-height);
+    }
+
+    .nav-menu {
+        width: initial;
+    }
+
+    .nav-toggle,
+    .nav-close {
+        display: none;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        padding: 0;
+        align-items: center;
+        column-gap: 4rem;
+    }
+
+    .nav-list>h2 {
+        display: none;
+    }
+
+    .nav-item {
+        border-top: none;
+    }
+
+    .nav-link>a {
+        padding: .60em 1em;
+    }
+
+    .container {
+        max-width: 1524px;
+        margin-inline: 2.5rem;
+    }
+
+    .branch-title {
+        font-size: var(--h1-font-size);
+        max-width: 15rem;
+    }
+
+    .branch-data {
+        padding: 4.5rem;
+    }
+
+    .branch-button {
+        padding: .6em 1em;
+    }
+}
+
+/* Large Devices End */
+
+/*=============== Breakpoints END ===============*/

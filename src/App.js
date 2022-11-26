@@ -3,8 +3,8 @@ import Navbar from './components/Navbar'
 import Home from './components/Home';
 import Program from './components/Program';
 import Branch from './components/Branch';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import './components/styles/breakpoints.css';
 
 
 function App() {
@@ -14,7 +14,6 @@ function App() {
       <Home />
       <Program />
       <Branch />
-      <Contact />
       <Footer />
     </div>
   );

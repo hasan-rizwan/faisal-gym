@@ -43,7 +43,7 @@
 }
 
 /* Responsive typography */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 780px) {
 	:root {
 		--biggest-font-size: 6rem;
 		--bigger-font-size: 3.5rem;

@@ -21,7 +21,7 @@ const Branches = () => {
                     </article>
                     <article className='branch-card branch-nazimabadblk5'>
                         <div className="branch-data">
-                            <h1 className="branch-title">Nazimabad Block 5 Paposh</h1>
+                            <h1 className="branch-title">Nazimabad Block 5</h1>
                             <button className="branch-button">Find More</button>
                         </div>
                     </article>
