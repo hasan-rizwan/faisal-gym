@@ -1,75 +1,91 @@
-.branch-container {
-    grid-template-columns: 250px;
-    justify-content: center;
-    row-gap: 2rem;
+.branch-section {
+    padding: 10.5rem 0 2rem;
+}
+
+.section-data {
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .branch-card {
-    max-width: max-content;
-    padding: 1.5rem 0 0;
-    border: 1px solid var(--first-color);
+    display: flex;
+    flex-direction: column;
     border-radius: .5rem;
     overflow: hidden;
-    transition: border .4s;
-    /* position: relative;
-    isolation: isolate; */
+    margin-bottom: 1rem;
+}
+
+.branch-photo-bg {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, .4) 20%, #000);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .branch-nazimabadBlk1 {
     background-image: url('./assets/images/branch-nazimabadBlk1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    flex-basis: 30%;
 }
 
 .branch-nazimabadblk5 {
-    background-image: url('./assets/images/branch-nazimabadblk5.jpg');
+    background-image: url('./assets/images/branch-nazimabadBlk5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    flex-basis: 30%;
 }
 
 .branch-NorthKarachi {
     background-image: url('./assets/images/branch-NorthKarachi.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    flex-basis: 30%;
 }
 
 .branch-gulzarEHijri {
     background-image: url('./assets/images/branch-gulzarEHijri.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    flex-basis: 30%;
 }
 
 .branch-asphani {
     background-image: url('./assets/images/branch-asphani.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.branch-data {
-    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.4) 20%, hsl(0 0% 0% / 1));
-    text-align: center;
-    padding: 2.5rem;
-
+    flex-basis: 30%;
 }
 
 .branch-title {
-    max-width: 10rem;
+    text-align: center;
+    padding-block: 5rem;
     font-size: var(--h2-font-size);
-    margin-bottom: 1rem;
 }
 
-.branch-button {
-    display: inline-block;
-    padding: .3em .5em;
-    background-color: var(--first-color);
-    color: var(--title-color);
-    border: 2px solid var(--first-color-dark);
-    border-radius: 2rem;
-    font-weight: var(--font-bold);
-    transition: background .3s;
-    cursor: pointer;
+.branch-details {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.377);
 }
 
-.branch-button:hover {
-    background-color: var(--first-color-alt);
+.details-title {
+    font-size: var(--h2-font-size);
+    margin-block: 1rem;
+}
+
+.branch-details p {
+    letter-spacing: .9px;
+    line-height: 25px;
+}
+
+.branch-details p span {
+    color: var(--first-color);
+}
+
+.map {
+    border: 0;
+    height: 25rem;
+    width: 100%;
 }

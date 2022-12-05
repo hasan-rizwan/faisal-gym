@@ -4,7 +4,7 @@ import ArrowRightLine from './styles/assets/webfonts/ArrowRightLine'
 import heroVideo from './styles/assets/videos/hero-video.mp4'
 import { Link } from 'react-scroll'
 
-const Home = () => {
+const Hero = () => {
     return (
         <>
             <section className="home section" id='home'>
@@ -18,7 +18,7 @@ const Home = () => {
                         <p className="home-description">In here, we will help you to shape and build your ideal body and live your life to its fullest.</p>
                         <div className="button-container">
                             <Link spy={true} smooth={true} offset={-100} duration={0} to='program' className='button button-flex'> Our Program <ArrowRightLine /></Link>
-                            <button className='button-secondary button-flex'>Contact Us <ArrowRightLine /></button>
+                            <Link spy={true} smooth={true} offset={-100} duration={0} to='branches' className='button-secondary button-flex'>Our Branches<ArrowRightLine /></Link>
                         </div>
                     </div>
                 </div>
@@ -27,4 +27,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Hero

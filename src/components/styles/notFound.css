@@ -1,0 +1,16 @@
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.notFound-text-1 {
+    font-size: var(--h1-font-size);
+}
+
+.notFound-button {
+    margin-top: 1rem;
+    text-decoration: var(--first-color) underline double;
+}

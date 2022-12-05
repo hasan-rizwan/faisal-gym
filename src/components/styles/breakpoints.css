@@ -18,17 +18,40 @@
 
 /* Medium Devices Start */
 
+@media screen and (min-width: 508px) {
+
+    .branch-card {
+        flex-direction: row;
+    }
+
+    .branch-title {
+        padding-inline: 1.5rem;
+    }
+
+    .branch-details {
+        width: 100vw;
+    }
+}
+
 @media screen and (min-width: 564px) {
     .program-container {
         grid-template-columns: repeat(3, 155px);
         gap: 2rem;
     }
 
-    .branch-container {
+    .branches-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 2rem;
+    }
+
+    .notFound-text-1 {
+        font-size: 2.5rem;
+    }
+
+    .notFound-text-2 {
+        font-size: 3rem;
     }
 }
 
@@ -42,6 +65,13 @@
         gap: 2rem;
     }
 
+    .notFound-text-1 {
+        font-size: 3.5rem;
+    }
+
+    .notFound-text-2 {
+        font-size: 5rem;
+    }
 }
 
 /* Medium Devices End */
@@ -49,7 +79,7 @@
 
 /* Large Devices Start */
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1025px) {
 
     .nav {
         height: var(--header-height);
@@ -88,16 +118,45 @@
         margin-inline: 2.5rem;
     }
 
-    .branch-title {
+    .section-subtitle {
+        font-size: var(--h1-font-size);
+    }
+
+    .branches-data {
+        padding: 4.5rem;
+    }
+
+    .branches-title {
         font-size: var(--h1-font-size);
         max-width: 15rem;
     }
 
-    .branch-data {
+    .branches-button {
+        padding: .6em 1em;
+    }
+
+    .branch-title {
+        font-size: var(--h1-font-size);
+    }
+
+    .details-title {
+        font-size: var(--h1-font-size);
+    }
+
+    .branch-details p {
+        letter-spacing: 1.5px;
+    }
+
+    .branches-data {
         padding: 4.5rem;
     }
 
-    .branch-button {
+    .branches-title {
+        font-size: var(--h1-font-size);
+        max-width: 15rem;
+    }
+
+    .branches-button {
         padding: .6em 1em;
     }
 }
