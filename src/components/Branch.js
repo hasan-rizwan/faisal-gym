@@ -27,7 +27,7 @@ const Branch = () => {
             maleTime: '8AM - 10AM and 5PM - 1AM',
             femaleTime: '10AM - 5PM',
             admission: '500rs',
-            monthly: '1000rs',
+            monthly: '1200rs',
             map: [<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57868.82705310187!2d67.00409106134413!3d24.972860853492012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb34122fc003fa3%3A0xcafb34f664482b5!2sFaisal&#39;s%20gym!5e0!3m2!1sen!2s!4v1669616073569!5m2!1sen!2s" className='map' title='branch' allowFullScreen="" loading="eager" referrerPolicy="no-referrer-when-downgrade"></iframe>]
         },
         4: {
