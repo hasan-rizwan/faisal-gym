@@ -6,7 +6,6 @@ import Program from './components/Program';
 import Branches from './components/Branches';
 import Branch from './components/Branch';
 import Footer from './components/Footer';
-import NotFound from './components/NotFound';
 import './components/styles/breakpoints.css';
 
 function App() {
