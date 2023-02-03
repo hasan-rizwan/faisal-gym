@@ -18,7 +18,7 @@ function App() {
         {(pathname === '/branch/1' || pathname === '/branch/2' || pathname === '/branch/3' || pathname === '/branch/4' || pathname === '/branch/5') &&
           <Route path={'/branch/:id'} element={<div><Navbar branchNav={'reactRouter'} /><Branch /><Footer /></div>} />
         }
-        <Route path="*" element={<div><NotFound /></div>} />
+        <Route path="/*" element={<div><Navbar /><Hero /><Program /><Branches /><Footer /></div>} />
       </Routes>
     </div>
   );
